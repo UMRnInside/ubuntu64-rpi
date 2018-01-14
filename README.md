@@ -32,7 +32,7 @@ ubuntu官方居然不给RaspberrPi3出官方镜像（官方推荐的镜像是Ele
 
 * 本系统由以下组成
 
-firmware：由树莓派基金会官方提供的linux-rpi-4.9.y编译的aarch64内核
+firmware：由树莓派基金会官方提供的[rpi-4.12.y](https://github.com/raspberrypi/linux/tree/rpi-4.12.y)，由 @UMRnInside 提供的脚本及配置。
 
 rootfs：ubuntu-Base-arm64(根目录构建)
 
@@ -49,6 +49,8 @@ rootfs：ubuntu-Base-arm64(根目录构建)
 * 关于unity，官方说armhf不能显示桌面是因为没有硬件加速。
 
 * 关于vnc，在arm64上安装unity后可以用vnc连上并显示桌面，实际情况我没有试过。
+
+* 关于摄像头，运行`sudo modprobe bcm2835-v4l2`，或自行获取 [rpi-firmware](https://github.com/Hexxeh/rpi-firmware)
 
 * 第一次开机时不会拓展rootfs分区，意思是你需要自己拓展，用fdisk或gparted来拓展吧。
 
