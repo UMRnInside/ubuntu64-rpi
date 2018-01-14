@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Code from https://github.com/UMRnINside/RPi-arm64
 # Compilation-related Variables
 
 ARCH=${ARCH=arm64}

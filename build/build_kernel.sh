@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# Code from https://github.com/UMRnInside/RPi-arm64
+# U.M.R_Powered build script & kernel
 . global_definitions
 
 mkdir -p $BUILD_PATH
